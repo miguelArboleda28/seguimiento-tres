@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Árbol binario de búsqueda</h1>
+  <p>Ingresa los datos del nuevo nodo:</p>
+  <label for="user">Nombre de usuario:</label>
+  <input type="text" id="user">
+  <br>
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email">
+  <br>
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password">
+  <br>
+  <label for="birthdate">Fecha de nacimiento:</label>
+  <input type="date" id="birthdate">
+  <br>
+  <button onclick="handleInsert()">Insertar nodo</button>
+  <button onclick="nuevo()">Nuevo</button>
+  <p>letrero: <span id="letrero">vacio</span></p>
+  <br>
+  <p>Busca un nodo:</p>
+  <label for="searchUser">Nombre de usuario:</label>
+  <input type="text" id="searchUser">
+  <br>
+  <label for="searchEmail">Correo electrónico:</label>
+  <input type="email" id="searchEmail">
+  <br>
+  <label for="searchPassword">Contraseña:</label>
+  <input type="password" id="searchPassword">
+  <br>
+  <button onclick="handleFind()">Buscar nodo</button>
+  <br>
+  <h2>Recorrido del árbol:</h2>
+  <button class="inOrder" onclick="inorderTraversal()">Inorder</button>
+  <button class="preOrder" onclick="preorderTraversal()">Preorder</button>
+  <button class="posOrder" onclick="posorderTraversal()">Posorder</button>
+  <br>
+  <ul id="nodeList"></ul>
+</body>
+</html>
+    
+
+
+
